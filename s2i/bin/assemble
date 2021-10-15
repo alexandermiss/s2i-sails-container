@@ -2,11 +2,11 @@
 
 # If the 'the-nginx' assemble script is executed with the '-h' flag, print the usage.
 
-echo "---> Installing application source..."
-
+echo "---> Removing tar..."
 rm node-v16.8.0-linux-x64.tar.xz
 
+echo "---> Copying source code..."
 cp -Rf /tmp/src/. ./
 
-echo "---> Installing application source..."
+echo "---> Installing dependencies..."
 npm install
