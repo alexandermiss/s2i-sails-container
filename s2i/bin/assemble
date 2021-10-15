@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+# If the 'the-nginx' assemble script is executed with the '-h' flag, print the usage.
+
+echo "---> Installing application source..."
+
+rm node-v16.8.0-linux-x64.tar.xz
+
+cp -Rf /tmp/src/. ./
+
+echo "---> Installing application source..."
+npm install
